@@ -1,5 +1,4 @@
 import time
-import psutil
 
 start_time = time.time()
 
@@ -24,4 +23,3 @@ else:
 
 end_time = time.time()
 print('Время выполнения:', end_time - start_time)
-print(f"Память: {psutil.Process().memory_info().rss / 1024 ** 2:.2f} МБ")
