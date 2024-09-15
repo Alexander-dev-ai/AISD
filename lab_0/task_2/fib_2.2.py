@@ -4,7 +4,7 @@ with open('input.txt') as f:
 
 f0 = 0
 f1 = 1
-if n < 0 and n > 45:
+if n < 0 or n > 45:
     print('Error')
 else:
     for i in range(n - 2):
