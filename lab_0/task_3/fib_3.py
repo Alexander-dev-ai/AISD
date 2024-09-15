@@ -9,7 +9,7 @@ f_1 = 1
 f_2 = 1
 with open('output.txt', 'w') as f:
     if n < 0 or n > 10 ** 7:
-        print('Error')
+        f.write('Error')
     elif n == 0:
         f.write('0')
     elif n == 1 or n == 2:
