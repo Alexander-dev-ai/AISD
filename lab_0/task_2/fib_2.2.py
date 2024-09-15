@@ -7,12 +7,12 @@ with open('input.txt') as f:
 
 f0 = 0
 f1 = 1
-if n < 0 or n > 45:
-    print('Error')
-else:
-    for i in range(n - 2):
-        f0, f1 = f1, f1 + f0
-    with open('output.txt', 'w') as f:
+with open('output.txt', 'w') as f:
+    if n < 0 or n > 45:
+        f.write('Error')
+    else:
+        for i in range(n - 2):
+            f0, f1 = f1, f1 + f0
         f.write(str(f1))
 
 end_time = time.time()
